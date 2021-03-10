@@ -1,0 +1,28 @@
+{
+  "name": "gen-art-ts",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "fmt": "prettier --write stories/*.ts",
+    "dev": "start-storybook -p 6006",
+    "build": "build-storybook -c .storybook -o docs"
+  },
+  "prettier": {
+    "singleQuote": true,
+    "trailingComma": "none",
+    "arrowParens": "avoid"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.13.10",
+    "@storybook/addons": "^6.1.21",
+    "@storybook/html": "^6.1.21",
+    "@storybook/theming": "^6.1.21",
+    "@types/p5": "^0.9.1",
+    "babel-loader": "^8.2.2",
+    "prettier": "^2.2.1"
+  },
+  "dependencies": {
+    "p5": "^1.2.0"
+  }
+}
